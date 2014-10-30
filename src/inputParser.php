@@ -11,7 +11,17 @@ namespace Utility;
  */
 class InputParser
 {
+    const TOKEN_DELIMITER = ' ';
+
+    var $command = '';
+    var $inputText = '';
+
     function __construct()
     {
+    }
+
+    public function tokenise($string)
+    {
+        $tokens = explode(self::TOKEN_DELIMITER, $string)
     }
 }
